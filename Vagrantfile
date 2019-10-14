@@ -23,7 +23,7 @@ Vagrant.configure("2") do |config|
   # config.vm.network "public_network"
 
   #Foler Settings
-  config.vm.synced_folder "wordpress", "/var/www/html/", :mount_options => ["dmode=777", "fmode=666"]
+  config.vm.synced_folder "wordpress", "/var/www/html", :mount_options => ["dmode=777", "fmode=666"]
 
   #Provision Seettings
   #config.vm.provision "shell", inline: <<-SHELL
